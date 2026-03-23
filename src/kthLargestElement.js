@@ -10,12 +10,10 @@
  */
 var findKthLargest = function(nums, k) {
     if (!Array.isArray(nums) || nums.length === 0) {
-        console.error('Invalid input: nums should be a non-empty array');
         return null;
     }
 
-    if (typeof k !== 'number' || k <= 0 || k > nums.length) {
-        console.error('Invalid input: k should be a positive integer less than or equal to the length of nums');
+    if (typeof k !== 'number' || k < 0 || k > nums.length || !Number.isInteger(k)) {
         return null;
     }
 
