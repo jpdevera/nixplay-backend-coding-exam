@@ -89,7 +89,8 @@ class LRUCache {
             node.expiresAt = expiresAt;
             this._remove(node);
             this._addToFront(node);
-        } 
+            return;
+        }
 
         // Evict LRU key if at capacitty
         if (this.map.size >= this.capacity) {
