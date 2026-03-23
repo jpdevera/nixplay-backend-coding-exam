@@ -30,6 +30,7 @@ node tests/lruCacheWExpiration.test.js
 go to node REPL and run the specific method/class 
 
 - for kthLargestElement
+bash > node
 const { findKthLargest } = require('./src/kthLargestElement'); 
 findKthLargest([3, 2, 1, 5, 6, 4], 2)
 
